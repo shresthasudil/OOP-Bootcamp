@@ -1,9 +1,9 @@
 <?php
 
 class Person {
-    public $name;
+    private $name;      // Encapsulated by making the property private.
 
-    public $age;
+    private $age;       // Encapsulated by making the property private.
 
     /**
      * Person constructor.
