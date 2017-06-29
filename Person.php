@@ -1,5 +1,10 @@
 <?php
 
+/**
+ * Encapsulation: Information Hiding
+ * Setters and Getters are usually used to update/access the private properties in a Class.
+ * Class Person
+ */
 class Person {
     private $name;      // Encapsulated by making the property private.
 
@@ -44,5 +49,5 @@ class Person {
 $john = new Person('John Doe');
 $john->setAge(19);
 // it is still possible to assign value directly into the property. This is when we need ENCAPSULATION
-//$john->age = 12;
+//$john->age = 12;  // since to $age is Private, directly setting $age will now throw error.
 var_dump($john);
