@@ -1,5 +1,7 @@
 <?php
 /**
+ * E01: Classes
+ *
  * Basic rule is to name the Class with Noun, but its not always true.
  * File name is same as Class name.
  * Classes are Blueprint for Objects.
@@ -8,6 +10,8 @@ class Task {
     /**
      * Property in the class.
      * Public: anyone can access this property outside of the class.
+     * Private: can only & exclusively be accessed within class.
+     * Protected: can be extended when class is inherited.
      */
     // public $description = 'Go to the store';                 // Do NOT hard code properties in class.
     public $title;

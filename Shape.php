@@ -1,12 +1,15 @@
 <?php
 
 /**
- * Inheritance:
- * Abstract Class:
- * Abstract Class cannot be instantiated
- * Parent Class:
- * Sub Class:
- * Abstract Method: does not have body
+ * Inheritance: Derive Attribute and Behavior of one Class to other which extends it.
+ * Parent Class: Class which mainly has Attributes and Behaviors.
+ * Sub Class: Classes which extends/inherits Parent Class.
+ * Abstract Class: Contract for other sub-classes to follow.
+ * Abstract Class cannot be instantiated, rather its Sub-Classes are instantiated.
+ * $shape1 = new Shape; NOT VALID, Cannot ne instantiated
+
+ * Abstract Method: Method rule that needs to be implemented on Sub-Classes of this Abstract Class.
+ * Abstract Method does not have body.
  *
  * Template Method Design Pattern:
  * Class Shape
@@ -27,6 +30,7 @@ abstract class Shape
 
     /**
      * @return mixed
+     * Sub-Classes extending this Shape Class must have getArea() method.
      */
     abstract protected function getArea();
 
@@ -68,3 +72,5 @@ class Circle extends Shape
 
 $circle = new Circle;
 echo $circle->getArea();
+/**  OR  */
+// (new Circle)->getArea();
